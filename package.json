@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-minimal-ts",
+  "name": "my-gatsby-site",
   "version": "1.0.0",
   "private": true,
-  "description": "A Gatsby starter written in TypeScript with no plugins and a single welcome page.",
-  "author": "Jude Agboola",
+  "description": "my-gatsby-site",
+  "author": "YUKI",
   "keywords": [
     "gatsby"
   ],
@@ -15,16 +15,26 @@
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit"
   },
-  "license": "0BSD",
   "dependencies": {
     "gatsby": "^5.14.1",
+    "gatsby-plugin-image": "^3.14.0",
+    "gatsby-plugin-sharp": "^5.14.0",
+    "gatsby-plugin-sitemap": "^6.14.0",
+    "gatsby-source-wordpress": "^7.15.0",
+    "gatsby-transformer-sharp": "^5.14.0",
+    "js-search": "^2.0.1",
+    "query-string": "^9.1.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-player": "^2.16.0",
+    "tiny-segmenter": "^0.2.0"
   },
   "devDependencies": {
+    "@types/js-search": "^1.4.4",
     "@types/node": "^20.11.19",
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19",
+    "@types/tiny-segmenter": "^0.2.0",
     "typescript": "^5.3.3"
   }
 }
