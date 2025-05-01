@@ -47,7 +47,7 @@ export const PostDetail: React.FC<PostDetailProps> = ({ queryData, queryRelatedD
                 Please support us by making <a href="https://paypal.me/" target="_parent" rel="sponsored">a PayPal donation</a>. Nam ex nibh, efficitur eget libero ut, placerat aliquet justo. Cras nec varius leo.
               </p>
               <div className="text-center mb-5">
-                <a href="#" className="btn btn-primary tm-btn-big">Download</a>
+                <a href={queryData.video ? queryData.video : queryData.featuredImage.node.sourceUrl} className="btn btn-primary tm-btn-big" download>Download</a>
               </div>
               <div className="mb-4 d-flex flex-wrap">
 
