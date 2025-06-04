@@ -31,18 +31,20 @@ export const GridListItem: React.FC<GridListItemProps> = ({ data }) => {
       return <img src={featuredImage.node.sourceUrl} alt="Image" className="img-fluid" />
     }
     if (video) {
-      return <ReactPlayer url={video} className="img-fluid" height={'50%'} />
+      return <ReactPlayer url={video} className="img-fluid" height={'100%'} />
     }
   }
 
   return (
     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5" key={id}>
       <figure className="effect-ming tm-video-item">
-        {thumb()}
-        <figcaption className="d-flex align-items-center justify-content-center">
-          <h2>{title}</h2>
-          <Link to={uri}>View more</Link>
-        </figcaption>
+        <div className="tm-video-item-inn">
+          {thumb()}
+          <figcaption className="d-flex align-items-center justify-content-center">
+            <h2>{title}</h2>
+            <Link to={uri}>View more</Link>
+          </figcaption>
+        </div>
       </figure>
       <div className="d-flex justify-content-between tm-text-gray">
         <span className="tm-text-gray-light">{formatDate(date)}</span>
